@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <title>Febrian's Projects</title>
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/projects.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo-menu">
+        <img
+          src="/assets/logo.png"
+          style="width: 50px; height: 50px"
+          alt="fs" />
+        <a href="/">Home</a>
+        <a style="font-weight: bold" href="/projects.html">My Projects</a>
+      </div>
+      <a href="/contact.html">
+        <button href="/contact.html" style="padding: 10px 30px">
+          Contact Me
+        </button>
+      </a>
+    </nav>
+
+    <!-- Contents -->
+    <div class="container">
+      <h1>ADD MY PROJECT</h1>
+      <form id="projectForm" onsubmit="getData(event)">
+        <!-- Project Name -->
+        <div class="label-input">
+          <label for="projectName">Project Name</label>
+          <input type="text" id="projectName" />
+        </div>
+
+        <!-- Date Time -->
+        <div class="timezone">
+          <div class="input-timezone">
+            <label for="startDate">Start Date</label>
+            <input type="date" id="startDate" />
+          </div>
+
+          <div class="input-timezone">
+            <label for="endDate">End Date</label>
+            <input type="date" id="endDate" />
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="label-input">
+          <label for="description">Description</label>
+          <textarea name="description" id="description"></textarea>
+        </div>
+
+        <!-- Technologies -->
+        <div class="label-input">
+          <label>Technologies</label>
+          <div class="checkbox-container">
+            <div class="gap-column">
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  value="Node JS"
+                  name="checklist"
+                  id="checklist" />
+                <label for="checklist">Node JS</label>
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  value="React JS"
+                  name="checklist"
+                  id="checklist" />
+                <label for="checklist">React JS</label>
+              </div>
+            </div>
+
+            <div class="gap-column">
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  value="Next JS"
+                  name="checklist"
+                  id="checklist" />
+                <label for="checklist">Next JS</label>
+              </div>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  value="TypeScript"
+                  name="checklist"
+                  id="checklist" />
+                <label for="checklist">TypeScript</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upload Images -->
+        <div class="label-input">
+          <label for="image">Upload Image</label>
+          <input type="file" id="image" />
+        </div>
+        <button class="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Detail Projects -->
+    <div style="background-color: cornsilk" class="container">
+      <h1>MY PROJECTS</h1>
+      <div id="addProject" class="card-container"></div>
+    </div>
+  </body>
+  <script src="/js/projects.js"></script>
+</html>

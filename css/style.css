@@ -1,0 +1,69 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+img {
+  cursor: pointer;
+}
+
+a {
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0px 2px 0 gray;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  transition: 0.1s;
+}
+
+.container {
+  position: fixed;
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  padding: 50px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 900px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px 1px rgba(0, 0, 0, 0.1);
+}
+
+.descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-cv {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.icons {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}

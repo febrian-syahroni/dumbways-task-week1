@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+img {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gainsboro;
+  padding: 0 50px;
+  box-shadow: 0 0px 5px 0 gray;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: space-between;
+}
+
+a {
+  font-size: medium;
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 0px 2px 0 gray;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
